@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Task3</title>
+    <style>
+        .one {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            position: static;
+            /*<!--default position is static-->*/
+        }
+
+        .two {
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            position: relative;
+            left: 50px;
+            top: 50px;
+            z-index: 1;
+        }
+
+        .three {
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .four {
+            margin-left: 100px;
+            margin-top: 200px;
+            border: 2px solid red;
+            height: 100px;
+            width: 200px;
+            position: relative;
+        }
+
+        .h1 {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+
+        h1 {
+            position: fixed;
+            left: 500px;
+            top: 200px;
+        }
+
+        h2 {
+            position: sticky;
+            top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="four"><!-- absolute position div and h1 -->
+        <h1 class="h1">Hello</h1>
+    </div><!-- static and relative -->
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="five"><!-- fixed position -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, aperiam doloribus quam saepe, praesentium
+            pariatur
+            dolores, commodi sapiente laudantium expedita atque aliquid facere ex! Reprehenderit, atque consectetur quos
+            amet, laborum, voluptatem id voluptatibus veniam corrupti tenetur aliquid cupiditate qui nesciunt provident
+        <h1>One</h1> sunt?lorem200 </p>
+    </div>
+    <!-- sticky -->
+    <div class="six">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, et temporibus eaque commodi maxime vero quidem
+        <h2>Top</h2>sint omnis officia dolore? Illum, suscipit totam dolorum assumenda tempora accusamus quo, alias
+        sequi
+        nesciunt blanditiis quibusdam obcaecati rerum fuga in voluptatibus rem! Facilis soluta cumque exercitationem
+        obcaecati quod dolor aliquid facere deserunt eaque! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Rerum,
+        quasi id. Qui iure eius omnis atque ad adipisci voluptate provident, voluptatum labore velit facilis odio
+        quaerat,
+        animi nihil esse impedit alias maxime non voluptatibus odit exercitationem, natus nulla obcaecati dicta? Autem
+        atque
+        voluptates suscipit consectetur? Qui velit inventore beatae deleniti repudiandae eos unde voluptatibus ad
+        ducimus.
+        Ipsam libero consectetur, quidem soluta reprehenderit quasi maxime, ipsum illum aliquid sunt quam laudantium quo
+        sequi corrupti porro in nulla sit quae? Vitae fugit natus officia ducimus recusandae quo consequuntur libero,
+        nulla
+        minus sequi necessitatibus alias odit? Fugit molestiae inventore nesciunt laboriosam consectetur suscipit
+        voluptas
+        ratione cumque reiciendis eveniet maxime a quasi vel natus optio alias quis modi
+        </p>
+    </div>
+</body>
+
+</html>

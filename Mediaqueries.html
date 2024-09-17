@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    h1 {
+        color: red;
+    }
+
+    div {
+        background-color: green;
+        height: 300px;
+    }
+
+    @media screen and (max-width:900px) {
+        .one {
+            background-color: yellow;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .one {
+            background-color: blue;
+        }
+    }
+
+    @media screen and (max-width:400px) {
+        .one {
+            background-color: red;
+        }
+    }
+</style>
+
+<body>
+    <!--<h1>Hello</h1>-->
+    <div class="one">
+
+    </div>
+</body>
+<html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--@media print {
+h1{
+color:blue;
+}
+}
+@media print and (orientation:landscape)/* for laptop */
+/*{
+h1{
+color:yellow;
+}
+}
+@media print and (orientation:portrait)/* for phone */
+/*{
+h1{
+color:green;
+}
+}*/
+/*@media screen and (max-width:600px){
+h1{
+color:blue;
+}
+}
+@media screen and (max-width:400px){
+h1{
+color:green;
+}
+}-->
