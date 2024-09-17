@@ -1,0 +1,20 @@
+const quotes = [ "Nice", "Good", "Excellant", "Outstanding","thanks" ];
+var ch, length = quotes.length, k = 0;
+try {
+    do {
+        ch = prompt("for QUOTE[press1] | Exit[press2] : ");
+        if (ch == 1) {
+            var one = Math.floor(Math.random()*quotes.length);
+            if (~length < 0) {
+                prompt(quotes[one]);
+            }
+            for (var i = one; i < length - 1; i++) {
+                quotes[i] = quotes[i + 1];
+            }
+            k++;
+            length--;
+        }
+    } while (ch == 1);
+} catch (err) {
+    prompt("----finish------");
+}
